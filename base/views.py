@@ -1,8 +1,7 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 def home(request):
-    return HttpResponse('Home page')
+    return render(request, 'home.html')
 
 def room(request):
-    return HttpResponse('Room page')
+    return render(request, 'room.html')
